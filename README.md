@@ -1,6 +1,7 @@
 # 6.0.1 Assignment: Aggregator Functions
 - [6.0.1 Assignment: Aggregator Functions](#601-assignment-aggregator-functions)
 - [Before Getting started](#before-getting-started)
+- [Knex](#knex)
   - [A brief civics lesson](#a-brief-civics-lesson)
   - ["I don't care about about that or fully understand the data"](#i-dont-care-about-about-that-or-fully-understand-the-data)
 - [THE DATA RESULTS HERE ARE WRONG ON PURPOSE](#the-data-results-here-are-wrong-on-purpose)
@@ -22,6 +23,19 @@
 
 # Before Getting started
 This is a fun assignment as you are going to be examining a data set, a list of all US congress members at 10 year intervals. We'll be trying to answer some questions about their ages and numbers, which is something you may actually care about. Do we have older and older folks running our country? Find out below!
+
+# Knex
+So we're using knex again to allow our JS files to talk to our database. Just like last time, we need you to make a copy of `.env.template` as `.env` and fill it with the values you need!
+
+```env
+PG_HOST=127.0.0.1
+PG_PORT=5432
+PG_USER='postgres'
+PG_PASSWORD='postgres'
+PG_DATABASE='congress_age_data'
+```
+
+This time, make sure the `PG_DATABASE` is set to `congress_age_data`. The name is not up to you this time, we're using an existing dataset.
 
 ## A brief civics lesson
 Our country has 3 branches of governments: judicial, executive, and legislative. Legislative is the one that writes and makes the laws, executive enforces them, and judicial judges whether or not the laws are allowed by our Constitution.
