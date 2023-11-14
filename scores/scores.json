@@ -76,7 +76,7 @@
       "BaQu6": 1
     },
     "From Scratch Tests": {
-      "FrScTe1": 0,
+      "FrScTe1": 1,
       "FrScTe2": 0,
       "FrScTe3": 0,
       "FrScTe4": 0,
@@ -91,8 +91,8 @@
   },
   "humanReadable": {
     "Advanced Queries": "7/7",
-    "finalTestScore": "FINAL SCORE: 13/24",
+    "finalTestScore": "FINAL SCORE: 14/24",
     "Basic Queries": "6/6",
-    "From Scratch Tests": "0/11"
+    "From Scratch Tests": "1/11"
   }
 }

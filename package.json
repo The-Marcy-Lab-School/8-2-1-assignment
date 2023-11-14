@@ -8,10 +8,12 @@
     "start": "nodemon src/index.js",
     "restore": "pg_restore -C --clean -d postgres -v -p 5432 -U postgres db.dump",
     "restore:manual": "node src/back-up-queries",
+    "restore:fix": "psql -d congress_age_data -f ./db.sql",
     "db": "psql -d congress_age_data",
     "test": "jest --coverage --runInBand",
     "test:w": "jest --watch --runInBand",
-    "dump": "pg_dump -Fc --no-acl --no-owner -h localhost -U postgres congress_age_data > db.dump"
+    "dump": "pg_dump -Fc --no-acl --no-owner -h localhost -U postgres congress_age_data > db.dump",
+    "dump:sql": "pg_dump --no-acl --no-owner -h localhost -U postgres congress_age_data > db.sql"
   },
   "keywords": [],
   "author": "",
