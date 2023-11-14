@@ -8,7 +8,7 @@
     "start": "nodemon src/index.js",
     "restore": "pg_restore -C --clean -d postgres -v -p 5432 -U postgres db.dump",
     "restore:manual": "node src/back-up-queries",
-    "restore:fix": "psql -d congress_age_data -f ./db.sql",
+    "restore:fix": "psql -d congress_age_data < ./db.sql",
     "db": "psql -d congress_age_data",
     "test": "jest --coverage --runInBand",
     "test:w": "jest --watch --runInBand",
