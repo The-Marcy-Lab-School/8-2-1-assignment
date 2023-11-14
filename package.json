@@ -1,0 +1,33 @@
+{
+  "name": "intro-to-sql-practice-answer-key",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "cp hooks/pre-commit .git/hooks/pre-commit",
+    "start": "nodemon src/index.js",
+    "restore": "pg_restore -C --clean -d postgres -v -p 5432 -U postgres db.dump",
+    "restore:manual": "node src/back-up-queries",
+    "db": "psql -d congress_age_data",
+    "test": "jest --coverage --runInBand",
+    "test:w": "jest --watch --runInBand",
+    "dump": "pg_dump -Fc --no-acl --no-owner -h localhost -U postgres congress_age_data > db.dump"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "jest": "^29.5.0",
+    "knex": "^2.4.2",
+    "pg": "^8.10.0",
+    "score-tests": "^1.0.0",
+    "sqlite3": "^5.1.6"
+  },
+  "devDependencies": {
+    "eslint": "^8.37.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "nodemon": "^2.0.22"
+  }
+}
