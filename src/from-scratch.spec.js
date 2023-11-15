@@ -12,7 +12,7 @@ const {
   oldestMember,
   oldestChamber,
   currentCongressGenerationsAndAgesCounts,
-} = require('./queries');
+} = require('./from-scratch');
 
 const testSuiteName = 'From Scratch Tests';
 const scoresDir = path.join(__dirname, '..', 'scores');

@@ -9,7 +9,7 @@ const {
   oldestMember,
   oldestChamber,
   currentCongressGenerationsAndAgesCounts,
-} = require('./queries');
+} = require('./from-scratch');
 
 const main = async () => {
   await countAllMembers();
