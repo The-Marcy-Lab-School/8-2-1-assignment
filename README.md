@@ -101,6 +101,15 @@ If that doesn't work, you *can* run the backup command:
 npm run restore:manual
 ```
 
+**If even that doesn't work then you can literally just run the sql commands from the .sql file**
+
+```bash
+# Go into your DB and drop/create the database first!
+npm run restore:fix
+```
+
+Remember, you only need to run the :manual and :fix restores once (that's all you should need). If for some reason you need to run them again, drop and recreate the database first.
+
 *IF YOU CANNOT GET THIS TO WORK, YOU NEED TO FIND AN INSTRUCTOR TO HELP YOU*
 
 > Original data: For fun, we included the original csv data set of all members for the past 100 years or so.
