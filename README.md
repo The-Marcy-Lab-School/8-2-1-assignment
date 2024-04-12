@@ -1,4 +1,4 @@
-# 6.0.1 Assignment: Aggregator Functions
+# Aggregator Functions
 - [6.0.1 Assignment: Aggregator Functions](#601-assignment-aggregator-functions)
 - [Before Getting started](#before-getting-started)
 - [Knex](#knex)
